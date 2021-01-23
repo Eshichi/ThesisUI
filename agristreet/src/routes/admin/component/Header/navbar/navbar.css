@@ -1,0 +1,11 @@
+.navbar-section > div > div:nth-child(n + 1) {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 53px;
+}
+
+.navbar-content > a {
+    margin-right: 10px;
+    color: black;
+}

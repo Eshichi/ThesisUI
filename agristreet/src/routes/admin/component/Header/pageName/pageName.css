@@ -1,0 +1,15 @@
+.page-title-container {
+    padding: 10px;
+    background-color: #dbd9d9;
+}
+
+.page-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.page-title-button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
