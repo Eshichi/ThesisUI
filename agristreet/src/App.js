@@ -1,15 +1,17 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import React, { Component} from 'react'
-import Admin from './routes/admin/component'
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React, { Component } from "react";
+import AdminRoutes from "./routes/admin/component/AdminRoutes";
 
 function App() {
-  return (
-          <BrowserRouter>
-            <Switch>
-              <Route exact path="/" component={Admin} />
+    return (
+        <BrowserRouter>
+            {/* <Switch>
+                <Route exact path="/Admin" component={AdminRoutes} />
             </Switch>
+             */}
+            <AdminRoutes />
         </BrowserRouter>
-  );
+    );
 }
 
 export default App;

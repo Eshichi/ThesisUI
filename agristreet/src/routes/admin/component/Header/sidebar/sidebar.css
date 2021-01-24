@@ -1,4 +1,4 @@
-.sidebar-drawer .ant-drawer-header {
+/* .sidebar-drawer .ant-drawer-header {
     border-bottom: 1px solid #a0a0a0;
 }
 .sidebar-drawer .ant-drawer-body {
@@ -18,4 +18,8 @@
     border-bottom: 1px solid #a0a0a0;
     padding: 15px;
     background-color: #dae0e5 !important;
+} */
+
+.sidebar-container > aside {
+    height: 100% !important;
 }
