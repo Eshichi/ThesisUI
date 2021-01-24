@@ -1,25 +1,28 @@
-/* .sidebar-drawer .ant-drawer-header {
-    border-bottom: 1px solid #a0a0a0;
+.sidebar-container > aside > div,
+.sidebar-container .ant-menu-dark {
+    background-color: #00712d !important;
 }
-.sidebar-drawer .ant-drawer-body {
-    padding: 0px !important;
-}
-
-.sidebar-tabs {
-    border-bottom: 1px solid #a0a0a0;
-    padding: 15px;
-}
-
-.sidebar-tabs > a {
-    color: #212529;
-}
-
-.sidebar-tabs:hover {
-    border-bottom: 1px solid #a0a0a0;
-    padding: 15px;
-    background-color: #dae0e5 !important;
-} */
-
 .sidebar-container > aside {
     height: 100% !important;
+}
+@media only screen and (max-width: 600px) {
+    .sidebar-hidden > .ant-layout-sider-collapsed {
+        flex: 0 0 0px !important;
+        max-width: 0px !important;
+        min-width: 0px !important;
+        width: 0px !important;
+    }
+    .sidebar-hidden .ant-menu-inline-collapsed {
+        /* flex: 0 0 0px !important;
+    max-width: 0px !important;
+    min-width: 0px !important; */
+        width: 0px !important;
+    }
+    .sidebar-hidden .ant-menu-item-selected {
+        /* flex: 0 0 0px !important;
+    max-width: 0px !important;
+    min-width: 0px !important; */
+        width: 0px !important;
+        transition: 0s;
+    }
 }

@@ -44,3 +44,21 @@
 .site-layout .site-layout-background {
     background: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+    .admin-content-web {
+        display: none;
+    }
+    .admin-content-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .admin-content-web {
+        display: block;
+    }
+    .admin-content-mobile {
+        display: none;
+    }
+}

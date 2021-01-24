@@ -1,3 +1,6 @@
+.navbar-section {
+    float: right;
+}
 .navbar-section > div > div:nth-child(n + 1) {
     display: flex;
     justify-content: right;

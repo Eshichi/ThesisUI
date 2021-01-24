@@ -34,7 +34,7 @@ class Admin extends Component {
             <div>
                 <Row>
                     <Col span={24}>
-                        <div className="header-title">
+                        <div className="admin-content-web">
                             <Layout>
                                 <Sidebar
                                     toggleSidebar={this.toggleSidebar}
@@ -65,6 +65,54 @@ class Admin extends Component {
                                             </Col>
                                         </Row>
                                     </Header>
+                                    <Content
+                                        className="site-layout-background"
+                                        style={{
+                                            margin: "24px 16px",
+                                            padding: 24,
+                                            minHeight: 280,
+                                        }}
+                                    >
+                                        {this.props.children}
+                                    </Content>
+                                </Layout>
+                            </Layout>
+                        </div>
+                        <div className="admin-content-mobile">
+                            <Layout>
+                                <Layout className="site-layout">
+                                    <Header
+                                        className="site-layout-background"
+                                        style={{ padding: 0 }}
+                                    >
+                                        <Row>
+                                            <Col xs={4}>
+                                                {React.createElement(
+                                                    this.state.collapsed
+                                                        ? MenuUnfoldOutlined
+                                                        : MenuFoldOutlined,
+                                                    {
+                                                        className: "trigger",
+                                                        onClick: this
+                                                            .toggleSidebar,
+                                                    }
+                                                )}
+                                            </Col>
+                                            <Col xs={20}>
+                                                <Navbar />
+                                            </Col>
+                                        </Row>
+                                    </Header>
+                                </Layout>
+                            </Layout>
+                            <Layout>
+                                <Layout className="site-layout">
+                                    <Sidebar
+                                        toggleSidebar={this.toggleSidebar}
+                                        isSidebarVisible={
+                                            this.state.isSidebarVisible
+                                        }
+                                    />
                                     <Content
                                         className="site-layout-background"
                                         style={{

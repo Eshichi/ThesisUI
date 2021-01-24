@@ -47,7 +47,7 @@ class Navbar extends Component {
                 <Col xs={24}>
                     <div className="navbar-section">
                         <Row>
-                            <Col span={4} offset={20}>
+                            <Col span={4} xs={12}>
                                 <div className="navbar-content">
                                     <Link to="/admin/profile">Profile</Link>
                                     <Link to="/admin/account">Account</Link>

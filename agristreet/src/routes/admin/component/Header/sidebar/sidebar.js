@@ -42,7 +42,13 @@ class Sidebar extends Component {
         }
 
         return (
-            <div className="sidebar-container">
+            <div
+                className={
+                    this.props.isSidebarVisible
+                        ? "sidebar-container sidebar-hidden"
+                        : "sidebar-container "
+                }
+            >
                 <Sider
                     trigger={null}
                     collapsible
